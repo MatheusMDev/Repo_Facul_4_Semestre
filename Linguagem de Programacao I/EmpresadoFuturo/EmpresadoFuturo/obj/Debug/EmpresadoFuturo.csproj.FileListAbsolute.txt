@@ -1,0 +1,7 @@
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\bin\Debug\EmpresadoFuturo.exe.config
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\bin\Debug\EmpresadoFuturo.exe
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\bin\Debug\EmpresadoFuturo.pdb
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\obj\Debug\EmpresadoFuturo.csprojAssemblyReference.cache
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\obj\Debug\EmpresadoFuturo.csproj.CoreCompileInputs.cache
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\obj\Debug\EmpresadoFuturo.exe
+C:\Users\20222271\source\repos\EmpresadoFuturo\EmpresadoFuturo\obj\Debug\EmpresadoFuturo.pdb

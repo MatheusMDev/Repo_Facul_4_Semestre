@@ -1,0 +1,14 @@
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\bin\Debug\net6.0\ProjetoContaBancaria.exe
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\bin\Debug\net6.0\ProjetoContaBancaria.deps.json
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\bin\Debug\net6.0\ProjetoContaBancaria.runtimeconfig.json
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\bin\Debug\net6.0\ProjetoContaBancaria.dll
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\bin\Debug\net6.0\ProjetoContaBancaria.pdb
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.dll
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\refint\ProjetoContaBancaria.dll
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.pdb
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ProjetoContaBancaria.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\ProjetoContaBancaria\ProjetoContaBancaria\obj\Debug\net6.0\ref\ProjetoContaBancaria.dll
