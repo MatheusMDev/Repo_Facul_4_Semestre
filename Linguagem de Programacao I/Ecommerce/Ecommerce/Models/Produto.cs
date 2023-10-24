@@ -8,11 +8,12 @@ namespace Ecommerce.Models
     public class Produto
     {
         // atributos = propriedades
-        public int idProduto { get; set; }
+        public int IdProduto { get; set; }
         public string NomeProd { get; set; }
         public string Descricao { get; set; }
+        public int Quantidade { get; set; }
         public double Valor { get; set; }
-        public string urlImagem { get; set; }
+        public string UrlImagem { get; set; }
         public Categoria Categoria { get; set; }
     }
 }

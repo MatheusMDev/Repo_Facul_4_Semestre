@@ -22,7 +22,7 @@ namespace Ecommerce.Models.Data
         private static SqlConnection conexaoBD = null;
 
         // implementando um metodo para fazer a conexao com o banco de dados
-        private static SqlConnection ConectarBancoDados()
+        public static SqlConnection ConectarBancoDados()
         {
             //instanciando o objeto conexaoBD e passando para o construtor da classe SqlConnection como parametro a stringSQL
             //para fazer a conexão com o banco de dados
