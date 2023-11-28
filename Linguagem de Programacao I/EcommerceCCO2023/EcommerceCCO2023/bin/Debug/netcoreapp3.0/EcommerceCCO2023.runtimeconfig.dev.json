@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Miranda\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Miranda\\.nuget\\packages"
+    ]
+  }
+}

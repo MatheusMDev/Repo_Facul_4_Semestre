@@ -1,10 +1,14 @@
 ﻿@model Produto
 
+@{
+    Layout = "_LayoutProduto";
+}
+
 <form asp-controller="Produto" asp-action="Create" method="POST">
     <h2>Cadastrar Produto</h2>
     <br />
     <div class="form-group">
-        <label> Produto </label>
+        <label>Nome</label>
         <input asp-for="NomeProd" class="form-control" />
         <span asp-validation-for="NomeProd"></span>
     </div>

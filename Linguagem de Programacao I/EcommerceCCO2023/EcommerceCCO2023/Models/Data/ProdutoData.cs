@@ -135,36 +135,41 @@ namespace EcommerceCCO2023.Models.Data
         {
             bool sucesso = false;
 
-            // criar a string SQL para fazer o update
-            // de produto
-            string update = "exec sp_UpProduto " +
-                produto.IdProduto + ", '" +
-                produto.NomeProd + "', '" +
-                produto.Descricao + "', " +
-                produto.Quantidade + ", " +
-                produto.Valor + ", '" +
-                produto.UrlImagem + "', " +
-                produto.Status + ", " +
-                produto.Categoria.IdCategoria;
+            // criar a string SQL para fazer o update de produto
+            string update = "EXEC sp_UpProduto @IdProduto, @NomeProd, @Descricao, @Quantidade, @Valor, @UrlImagem, @Status, @IdCategoria";
+
             try
             {
-                // criar um objeto para conectar com o BD
-                SqlConnection conexaoBD = Data.ConectarBancoDados();
-                // criar um objeto para executar o comando SQL
-                SqlCommand cmd = new SqlCommand(update, conexaoBD);
-
-                if (cmd.ExecuteNonQuery() == 1)
+                using (SqlConnection conexaoBD = Data.ConectarBancoDados())
                 {
-                    Data.fecharConexaoBancoDados();
-                    sucesso = true;
-                }
+                    using (SqlCommand cmd = new SqlCommand(update, conexaoBD))
+                    {
+                        // Adicionar parâmetros
+                        cmd.Parameters.AddWithValue("@IdProduto", produto.IdProduto);
+                        cmd.Parameters.AddWithValue("@NomeProd", produto.NomeProd);
+                        cmd.Parameters.AddWithValue("@Descricao", produto.Descricao);
+                        cmd.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
+                        cmd.Parameters.AddWithValue("@Valor", produto.Valor);
+                        cmd.Parameters.AddWithValue("@UrlImagem", produto.UrlImagem);
+                        cmd.Parameters.AddWithValue("@Status", produto.Status);
+                        cmd.Parameters.AddWithValue("@IdCategoria", produto.Categoria.IdCategoria);
+
+                        if (cmd.ExecuteNonQuery() == 1)
+                        {
+                            sucesso = true;
+                        }
+                    } // O bloco using automaticamente chama o Dispose, que inclui o fechamento da conexão.
+                } // Outro bloco using para garantir que a conexão seja fechada, mesmo em caso de exceção.
             }
             catch (SqlException erro)
             {
                 Console.WriteLine("\n\n Erro de atualização do Produto " + erro);
             }
+
             return sucesso;
         }
+
+
 
         // método delete para excluir um produto pelo id
         public bool Delete(int id)
