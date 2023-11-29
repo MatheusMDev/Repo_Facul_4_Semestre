@@ -1,0 +1,44 @@
+﻿@model List<Cliente>
+
+@{
+    Layout = "_LayoutCliente";
+}
+
+<table class="table table-striped table-hover">
+    @if (Model != null)
+    {
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th></th>
+        </tr>
+        
+        @foreach (var c in Model)
+        {
+            <tr class="product-row">
+                <td>@c.IdCliente</td>
+                <td>@c.Nome</td>
+                <td>@c.Foto</td>
+                <td>@c.Email</td>
+                <td>@c.Senha</td>
+                <td>@c.statusCli</td>
+                <td>
+                    <a class="btn btn-sm btn-success" href="/Cliente/Update/@c.IdCliente">Editar</a>
+                    <a class="btn btn-sm btn-warning" href="/Cliente/Delete/@c.IdCliente">Apagar</a>
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+    <tr>
+        <td> VOLTOU NULL </td>
+    </tr>
+    }
+
+    </table>
+
+<a class="btn btn-primary" href="/Cliente/Create">Adicionar</a>

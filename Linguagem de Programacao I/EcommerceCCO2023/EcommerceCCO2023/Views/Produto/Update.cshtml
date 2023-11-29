@@ -1,10 +1,14 @@
 ﻿@model Produto
 
+@{
+    Layout = "_LayoutProduto";
+}
+
 <form asp-controller="Produto" asp-action="Update" method="POST">
     <h2>Cadastrar Produto</h2>
     <br />
     <div class="form-group">
-        <label> Produto </label>
+        <label> Categoria </label>
         <input asp-for="NomeProd" class="form-control" />
         <span asp-validation-for="NomeProd"></span>
     </div>
@@ -49,5 +53,6 @@
         </select>
     </div>
 
-    <button class="btn btn-primary">Salvar</button>
+
+    <button class="button">Salvar</button>
 </form>
