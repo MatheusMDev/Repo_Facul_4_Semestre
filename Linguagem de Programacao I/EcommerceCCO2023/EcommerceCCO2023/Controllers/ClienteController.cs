@@ -1,6 +1,9 @@
 ﻿using EcommerceCCO2023.Models;
 using EcommerceCCO2023.Models.Data;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Data;
+
 
 namespace EcommerceCCO2023.Controllers
 {
@@ -13,6 +16,10 @@ namespace EcommerceCCO2023.Controllers
 
         }
 
+        public IActionResult IndexLogin()
+        {
+            return View();
+        }
         public IActionResult Create()
         {
             ClienteData data = new ClienteData();

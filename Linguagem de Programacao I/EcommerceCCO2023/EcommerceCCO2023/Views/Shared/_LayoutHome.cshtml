@@ -1,13 +1,10 @@
-﻿<!-- este arquivo foi criado para dar layout a tela de produtos incluindo paginação-->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"] Linguagem de Programação - UNIRP</title> <!-- foi retirado o bootstrap do link rel, quebrou a aba "produtos"-->
 	<link rel="stylesheet" href="~/css/styles.css" />
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
@@ -27,6 +24,7 @@
 					<li class="nav__item">
 						<a class="nav__link" asp-area="" asp-controller="Produto" asp-action="IndexProd">Produto</a> 
 					</li>
+
 					<li class="nav__item">
 						<a class="nav__link" asp-area="" asp-controller="Cliente" asp-action="IndexCliente">Cliente</a>
 					</li>
@@ -56,11 +54,72 @@
 		</nav>
 	</header>
 
-	<div class="container">
-		<main role="main" class="pb-3">
-			@RenderBody()
-		</main>
-	</div>
+	<!--==================== MAIN ====================-->
+	<main class="main">
+		<!--==================== HOME ====================-->
+		<section class="home section" id="home">
+			<div class="home__container container grid">
+				<img src="~/images/home-sushi-rolls.png" alt="home image" class="home__img">
+
+				<div class="home__data">
+					<h1 class="home__title">
+						Aproveite Deliciosamente
+
+						<div>
+							<img src="~/images/home-sushi-title.png" alt="home image">
+							Sushi Food
+						</div>
+					</h1>
+
+					<p class="home__description">
+						Aproveite de um bom jantar com os melhores pratos 
+						do restaurante e melhore o seu dia.
+					</p>
+
+					<a href="#" class="button">
+						Peça agora <i class="ri-arrow-right-line"></i>
+					</a>
+				</div>
+			</div>
+
+			<img src="~/images/leaf-branch-2.png" alt="home image" class="home__leaf-1">
+			<img src="~/images/leaf-branch-4.png" alt="home image" class="home__leaf-2">
+		</section>
+		<div class="container">
+			<main role="main" class="pb-3">
+				@RenderBody()
+			</main>
+		</div>
+
+		<!--==================== ABOUT ====================-->
+		<section class="about section" id="about">
+			<div class="about__container container grid">
+				<div class="about__data">
+					<span class="section__subtitle">Sobre nós</span>
+					<h2 class="section__title about__title">
+						<div>
+							Nós fornecemos
+							<img src="~/images/about-sushi-title.png" alt="about image">
+						</div>
+
+						Comida saudável
+					</h2>
+
+					<p class="about__description">
+						A comida nos alcança por meio de nossos parentes, sejam eles alados ou enraizados.
+						Da mesma forma que temos raízes genealógicas, a comida também tem uma cultura, 
+						uma história que atravessa gerações.
+					</p>
+				</div>
+
+				<img src="~/images/about-sushi.png" alt="about image" class="about__img">
+			</div>
+
+			<img src="~/images/leaf-branch-1.png" alt="about image" class="about__leaf">
+		</section>
+	</main>
+	</header>
+
 
 	<footer class="footer">
 		<div class="footer__container container grid">
@@ -177,7 +236,9 @@
 	</footer>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/notify.min.js" asp-append-version="true"></script>
 	<script src="~/js/main.js" asp-append-version="true"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
+	@RenderSection("Scripts", required: false)
 </body>
 </html>

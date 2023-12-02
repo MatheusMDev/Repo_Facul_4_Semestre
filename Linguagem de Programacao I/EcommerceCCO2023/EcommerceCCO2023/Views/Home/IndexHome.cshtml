@@ -1,0 +1,9 @@
+﻿@model List<Produto>
+
+    <div class="row">
+        <!-- Usando a Partial View para exibir os lanches preferidos -->
+        @foreach (var lanche in Model)
+        {
+            <partial name="_ProdutoResumo" for="@lanche" />
+        }
+    </div>
