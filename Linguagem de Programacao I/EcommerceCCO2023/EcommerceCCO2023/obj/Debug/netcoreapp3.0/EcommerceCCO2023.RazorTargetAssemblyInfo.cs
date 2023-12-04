@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommerceCCO2023")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15eabfdd90d150579155752dff5a9064862d7c0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c47d1239de5264dc2e3fb18b80d0ddcaf095cf12")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommerceCCO2023.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

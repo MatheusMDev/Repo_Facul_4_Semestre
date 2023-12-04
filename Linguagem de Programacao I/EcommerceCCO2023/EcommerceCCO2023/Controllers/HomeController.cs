@@ -19,7 +19,6 @@ namespace EcommerceCCO2023.Controllers
             _logger = logger;
         }
 
-        [HttpPost]
         public IActionResult Index()
         {
             ProdutoData data = new ProdutoData();
